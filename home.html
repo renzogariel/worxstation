@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Home Appliances Store</title>
+    <link rel="stylesheet" href="Pics.css">
+</head>
+<body>
+    <header>
+        <h1>Home Appliances Store</h1>
+        <nav>
+            <ul>
+                <li><a href="welcome.html">Home</a></li>
+                <li><a href="index.html">Products</a></li>
+                <li><a href="#" onclick="showCart()">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h2>Welcome to Home Appliances Store!</h2>
+            <p>We're delighted to have you here. Explore our wide range of high-quality home appliances to make your life easier and more comfortable.</p>
+            <p>At Home Appliances Store, we offer a variety of products including refrigerators, ovens, washing machines, and more. Browse through our products and find the perfect appliance for your home.</p>
+            <a href="index.html" class="button">Start Shopping</a>
+        </section>
+
+        <div id="cart" class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Home Appliances Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

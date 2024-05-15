@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workzstation</title>
+    <link rel="stylesheet" href="pics.css">
+</head>
+<body>
+    <header>
+        <h1>WorKzStation</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Try1.html">Products</a></li>
+                <li><a href="#" onclick="showCart()">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="C:\Users\Dell\OneDrive\Documents\Website Test\fridge.jpg" alt="Fridge">
+                <h3>Fridge</h3>
+                <p>$500</p>
+                <button onclick="addToCart('Fridge', 500)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="C:\Users\Dell\OneDrive\Documents\Website Test\oven.jpg" alt="Oven">
+                <h3>Oven</h3>
+                <p>$300</p>
+                <button onclick="addToCart('Oven', 300)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="C:\Users\Dell\OneDrive\Documents\Website Test\washing machine.jpg" alt="Washing Machine">
+                <h3>Washing Machine</h3>
+                <p>$700</p>
+                <button onclick="addToCart('Washing Machine', 700)">Add to Cart</button>
+            </div>
+			<div class="product">
+                <img src="C:\Users\Dell\OneDrive\Documents\Website Test\blender.jpg" alt="blender">
+                <h3>Blender</h3>
+                <p>$200</p>
+                <button onclick="addToCart('Blender', 200)">Add to Cart</button>
+            </div>
+			<div class="product">
+                <img src="C:\Users\Dell\OneDrive\Documents\Website Test\airfryer.jpg" alt="airfryer">
+                <h3>Air Fryer</h3>
+                <p>$700</p>
+                <button onclick="addToCart('Air Fryer', 450)">Add to Cart</button>
+            </div>
+			<div class="product">
+                <img src="C:\Users\Dell\OneDrive\Documents\Website Test\rv.jpg" alt="rv">
+                <h3>Television</h3>
+                <p>$2500</p>
+                <button onclick="addToCart('Television', 2500)">Add to Cart</button>
+            </div>
+			<div class="product">
+                <img src="C:\Users\Dell\OneDrive\Documents\Website Test\jbl.jpg" alt="jbl">
+                <h3>JBL Bluetooth Speaker</h3>
+                <p>$350</p>
+                <button onclick="addToCart('JBL Bluetooth Speaker', 350)">Add to Cart</button>
+            </div>
+			<div class="product">
+                <img src="C:\Users\Dell\OneDrive\Documents\Website Test\LG.jpg" alt="LG">
+                <h3>LG Split Type Aircon</h3>
+                <p>$1150</p>
+                <button onclick="addToCart('G Split Type Aircon', 1150)">Add to Cart</button>
+            </div>
+			<div class="product">
+                <img src="C:\Users\Dell\OneDrive\Documents\Website Test\Kalan.jpg" alt="Kalan">
+                <h3>Range</h3>
+                <p>$1000</p>
+                <button onclick="addToCart('Range', 1150)">Add to Cart</button>
+            </div>
+			<div class="product">
+                <img src="C:\Users\Dell\OneDrive\Documents\Website Test\dryer.jpg" alt="dryer">
+                <h3>Dryer</h3>
+                <p>$850</p>
+                <button onclick="addToCart('Dryer', 1150)">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+			
+			<div id="cart" class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Home Appliances Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
